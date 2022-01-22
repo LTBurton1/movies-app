@@ -1,5 +1,3 @@
-import React from "react";
-
 function Movie({ movie }) {
   const { title, directors, genres, plot, year, poster } = movie;
 
@@ -9,11 +7,11 @@ function Movie({ movie }) {
       <h5>{year}</h5>
       {poster ? <img src={poster} alt="" /> : "No Poster Available..."}
       {genres.map(genre => (
-        <h6>{genre}</h6>
+        <h6 key={genre}>{genre}</h6>
       ))}
       <p>Directed by:</p>
       {directors.map(director => (
-        <p>{director}</p>
+        <p key={director}>{director}</p>
       ))}
       <p>{plot}</p>
     </li>

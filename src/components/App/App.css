@@ -5,12 +5,17 @@
 }
 
 :root {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
   display: grid;
   place-items: center;
-  padding: 3rem;
   text-align: center;
+}
+
+.movie-list-container {
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  margin: 2rem 0;
 }
