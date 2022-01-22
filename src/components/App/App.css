@@ -4,8 +4,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-family: "Courier New", Courier, monospace;
+}
+
 body {
   display: grid;
   place-items: center;
   padding: 3rem;
+  text-align: center;
 }

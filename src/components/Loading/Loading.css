@@ -1,0 +1,33 @@
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  animation: fade-in 250ms ease-in forwards;
+}
+
+.loading-icon {
+  width: max-content;
+  font-size: 2rem;
+  color: rgb(0, 145, 255);
+  animation: spin 750ms infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
