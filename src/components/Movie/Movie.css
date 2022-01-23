@@ -1,0 +1,36 @@
+.movie-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem;
+  list-style: none;
+  align-self: flex-start;
+}
+
+.movie-header {
+  grid-column: span 2;
+  margin: 1rem;
+  padding: 1rem;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.movie-poster-container {
+}
+
+.movie-poster {
+  align-self: flex-start;
+  width: 75%;
+}
+
+.movie-info-right {
+  text-align: left;
+}
+
+.movie-cast,
+.movie-plot {
+  margin-top: 1rem;
+}
+
+.movie-cast > p {
+  margin-top: 0.5rem;
+}

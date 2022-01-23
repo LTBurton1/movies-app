@@ -4,14 +4,14 @@
   align-items: center;
   justify-content: center;
   width: max-content;
-  animation: fade-in 250ms ease-in forwards;
 }
 
 .loading-icon {
   width: max-content;
-  font-size: 2rem;
+  font-size: 3rem;
   color: rgb(0, 145, 255);
-  animation: spin 750ms infinite linear;
+  margin: 2rem;
+  animation: spin 750ms infinite linear, fade 1.5s ease-in-out infinite;
 }
 
 @keyframes spin {
@@ -23,11 +23,14 @@
   }
 }
 
-@keyframes fade-in {
-  from {
+@keyframes fade {
+  0% {
     opacity: 0;
   }
-  to {
+  50% {
     opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }

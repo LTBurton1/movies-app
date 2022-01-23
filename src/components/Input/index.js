@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import "./Input.css";
+
 function Input({ updateMovies }) {
   const [title, setTitle] = useState("");
   const [year, setYear] = useState();
@@ -20,11 +22,14 @@ function Input({ updateMovies }) {
 
     updateMovies(title, year);
 
+    setTitle(" ");
+    setYear();
+
     form.reset();
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="movie-input" onSubmit={handleSubmit}>
       <input onChange={updateTitle} type="text" />
       <input onChange={updateYear} type="number" max="2050" />
       <button type="submit">Search</button>

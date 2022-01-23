@@ -1,9 +1,9 @@
 import "./Loading.css";
 
-function Loading() {
+function Loading({ text }) {
   return (
     <div className="loading-container">
-      <h3>Loading</h3>
+      {text ? text : ""}
       <i className="fas fa-compact-disc loading-icon"></i>
     </div>
   );

@@ -29,10 +29,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Movie Search</h1>
+      <h1 className="title">Movie Search</h1>
       <Input updateMovies={updateMovies} />
       <div className="movie-list-container">
-        <h4>Results: {movieList.length}</h4>
+        <h4 className="results-counter">Results: {movieList.length}</h4>
         {movieList.length > 0 ? <MovieList movies={movieList} /> : <Loading />}
       </div>
     </div>
